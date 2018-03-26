@@ -116,10 +116,10 @@ public class Literature {
 	
 	public static Map<String, String> getStatusValues() {
 		Map<String, String> status = new HashMap<String, String>();
-		status.put("new", "New");
-		status.put("publish", "Publish");
-		status.put("review", "Under Review");
-		status.put("editing", "Under Editing");
+		status.put("new", "Neu");
+		status.put("publish", "Veröffentlicht");
+		status.put("review", "unter Beobachtung");
+		status.put("editing", "in Bearbeitung");
 		return status;
 	}
 }

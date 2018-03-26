@@ -35,7 +35,7 @@
 		  </section>
 		  <footer>
 		    <p>
-		      <a href="${pageContext.request.contextPath}/LiteratureServlet?action=complain&id=${lit.id}">Werk Melden</a>
+		      <a href="${pageContext.request.contextPath}/LiteratureServlet?action=complain&id=${lit.id}">Werk melden</a>
 		    </p>
 		  </footer>
 		  <section class="user_comments">
@@ -48,7 +48,7 @@
 					  <div class="form-group">
 					    <textarea class="form-control" name="comment" placeholder="Comment"></textarea>
 					  </div>
-					  <button type="submit" class="btn btn-primary" name="comment-submit">Send</button>
+					  <button type="submit" class="btn btn-primary" name="comment-submit">Absenden</button>
 			    	</form>
 			    </section>
 		    </c:if>

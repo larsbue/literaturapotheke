@@ -11,13 +11,12 @@ public class DatabaseConnection {
 	
 	// Zugangsdaten zur Datenbank
 	protected static Connection con;
-	private static final String DB_SERVER = "localhost:5432";
-	private static final String DB_NAME = "postgres";
-	private static final String DB_USER = "postgres";
-	private static final String DB_PASSWORD = "";
+	private static final String DB_SERVER = "207.154.234.136:5432";
+	private static final String DB_NAME = "1718-PogChamp";
+	private static final String DB_USER = "1718-PogChamp";
+	private static final String DB_PASSWORD = "f7dd36a4bfff237386d4918dc01b32fc";
 	private static final String DB_DRIVER = "org.postgresql.Driver";
 	private static final String DB_URL = "jdbc:postgresql://" + DB_SERVER + "/" + DB_NAME;
-
 	/** Initialisiere eine Verbindung zur Datenbank 
 	 * @throws SQLException */
 	private static Connection init() throws SQLException {

@@ -14,7 +14,7 @@
 	<div class="container">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-		<h1>Literatur List</h1>
+		<h1>Literatur-Liste</h1>
 		
 		<c:if test="${not empty message}">
 			<p class="litap-message">${ message }</p>
@@ -36,7 +36,7 @@
 			</div>
 			<div class="form-group">
 				<input type="checkbox" name="complain" id="complain" ${param.complain != null ? 'checked="checked"' : ''}>
-				<label for="complain">With complain</label>
+				<label for="complain">mit Beschwerde</label>
 			</div>
 			<div class="form-group">
 				<label for="status">Status</label>

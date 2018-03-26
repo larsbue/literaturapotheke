@@ -14,7 +14,7 @@
 	<div class="container">
     <div class="row">
         <div class="col-md-12">
-		<h1>Literatur List</h1>
+		<h1>Liste der Werke</h1>
 		
 		<c:if test="${not empty message}">
 			<p class="litap-message">${ message }</p>

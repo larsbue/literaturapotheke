@@ -15,7 +15,7 @@
         <form id="werke-form" action="${pageContext.request.contextPath}/Admin/Literature?action=edit&id=<%= request.getParameter("id") %>" method="post" role="form" style="display: block;" accept-charset="UTF-8">
 			<%@ include file="/WEB-INF/parts/literature_inputs.jsp" %>
             <div class="form-group">
-                <textarea class="form-control" id="admincomment" name="admincomment" rows="5" placeholder="Admin comment"><c:out value='${literature.admincomment}'/></textarea>
+                <textarea class="form-control" id="admincomment" name="admincomment" rows="5" placeholder="Admin-Kommentar"><c:out value='${literature.admincomment}'/></textarea>
             </div>
 			<div class="form-group">
 				<label for="status">Status</label>

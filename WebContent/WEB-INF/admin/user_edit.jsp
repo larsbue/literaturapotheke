@@ -16,7 +16,7 @@
 	        <%@ include file="/WEB-INF/parts/user_inputs.jsp" %>
 	        
 			<div class="form-group">
-				<label for="role">Role</label>
+				<label for="role">Rolle</label>
 				<select name="role" class="form-control" id="role">
 					<c:set var="roles">guest,user,admin</c:set>
 					<c:forTokens items="${roles}" delims="," var="role">

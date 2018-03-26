@@ -22,7 +22,7 @@
 		
     	<form class="form" method="post">
 		  <div class="form-group">
-		    <textarea class="form-control" name="complain" placeholder="Complain"></textarea>
+		    <textarea class="form-control" name="complain" placeholder="Beschwerde eingeben"></textarea>
 		  </div>
 		  
   			<div class="form-group">
@@ -36,10 +36,10 @@
 			</div>
 			
 		  <div class="form-group">
-		    <textarea class="form-control" name="source" placeholder="Origin source"></textarea>
+		    <textarea class="form-control" name="source" placeholder="Originalquelle eingeben"></textarea>
 		  </div>
 			
-		  <button type="submit" class="btn btn-primary" name="complain-submit">Send</button>
+		  <button type="submit" class="btn btn-primary" name="complain-submit">Absenden</button>
     	</form>
 		
 		</div>

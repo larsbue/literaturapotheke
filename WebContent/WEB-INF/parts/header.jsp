@@ -1,7 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <header>
 	<div class="container">
-		<a href="index.html">
+		<a href="index.jsp">
 			<img class="img-responsive img-rounded" id="site-banner" src="${pageContext.request.contextPath}/images/wettbewerb1/header.jpg" alt="Literaturapotheke"/>
 		</a>
 	</div>

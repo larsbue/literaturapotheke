@@ -36,7 +36,7 @@
 		  <footer>
 		  	<c:if test="${ sessionScope.user.hasCapability('rate+comment-literature') }">
 		    <p>
-		      <a href="${pageContext.request.contextPath}/LiteratureServlet?action=complain&id=${literature.id}">Werk Melden</a>
+		      <a href="${pageContext.request.contextPath}/LiteratureServlet?action=complain&id=${literature.id}">Werk melden</a>
 		    </p>
 		    </c:if>
 		  </footer>
@@ -47,9 +47,9 @@
 			    <section class="form">
 			    	<form class="form" method="post">
 					  <div class="form-group">
-					    <textarea class="form-control" name="comment" placeholder="Comment"></textarea>
+					    <textarea class="form-control" name="comment" placeholder="Kommentar eingeben"></textarea>
 					  </div>
-					  <button type="submit" class="btn btn-primary" name="comment-submit">Send</button>
+					  <button type="submit" class="btn btn-primary" name="comment-submit">Absenden</button>
 			    	</form>
 			    </section>
 		    </c:if>
