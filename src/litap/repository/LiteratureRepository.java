@@ -1,4 +1,4 @@
-package elvaan.litap.repository;
+package litap.repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,8 +9,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import elvaan.litap.database.DatabaseConnection;
-import elvaan.litap.model.Literature;
+import litap.database.DatabaseConnection;
+import litap.model.Literature;
 
 /*
  * Schnittstelle für die Datenbankzugriffe für Werke (Literature)

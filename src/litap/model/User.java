@@ -1,6 +1,6 @@
-package elvaan.litap.model;
+package litap.model;
 
-import elvaan.litap.utils.RoleCapability;
+import litap.utils.RoleCapability;
 
 /*
  * Klasse Comment representiert ein Benutzer

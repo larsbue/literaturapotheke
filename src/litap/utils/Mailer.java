@@ -1,4 +1,4 @@
-package elvaan.litap.utils;
+package litap.utils;
 
 import java.util.Properties;
 import javax.mail.Message;
@@ -8,7 +8,7 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-import elvaan.litap.model.Complain;
+import litap.model.Complain;
 
 public class Mailer {
 

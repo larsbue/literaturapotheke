@@ -25,7 +25,7 @@
           		</ul>
           		<ul class="nav navbar-nav navbar-right">
 					<% if (session.getAttribute("user") != null) { %>
-          				<li><a>Willkommen <%= ((elvaan.litap.model.User)session.getAttribute("user")).getEmail() %></a></li>
+          				<li><a>Willkommen <%= ((litap.model.User)session.getAttribute("user")).getEmail() %></a></li>
 					<% } %>
        				<li><a href="${pageContext.request.contextPath}/ueber_uns.jsp">Über uns</a></li>
           			<% if (session.getAttribute("user") == null) { %>

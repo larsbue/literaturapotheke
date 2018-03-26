@@ -1,4 +1,4 @@
-package elvaan.litap.servlet.admin;
+package litap.servlet.admin;
 
 import java.io.IOException;
 
@@ -8,9 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import elvaan.litap.model.User;
-import elvaan.litap.repository.LiteratureRepository;
-import elvaan.litap.repository.UserRepository;
+import litap.model.User;
+import litap.repository.LiteratureRepository;
+import litap.repository.UserRepository;
 
 /**
  * Servlet implementation class UserServlet

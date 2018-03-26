@@ -1,4 +1,4 @@
-package elvaan.litap.utils;
+package litap.utils;
 
 import java.util.Arrays;
 import java.util.HashMap;

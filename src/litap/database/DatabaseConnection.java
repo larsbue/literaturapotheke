@@ -1,4 +1,4 @@
-package elvaan.litap.database;
+package litap.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

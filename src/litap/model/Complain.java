@@ -1,4 +1,4 @@
-package elvaan.litap.model;
+package litap.model;
 
 /*
  * Klasse Complain representiert eine Beschwerde

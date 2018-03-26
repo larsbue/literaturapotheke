@@ -1,4 +1,4 @@
-package elvaan.litap.repository;
+package litap.repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import elvaan.litap.database.DatabaseConnection;
-import elvaan.litap.model.Complain;
+import litap.database.DatabaseConnection;
+import litap.model.Complain;
 
 /*
  * Schnittstelle für die Datenbankzugriffe für Beschwerden (Complain)

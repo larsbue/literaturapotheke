@@ -1,4 +1,4 @@
-package elvaan.litap.model;
+package litap.model;
 
 import java.util.HashMap;
 import java.util.Map;

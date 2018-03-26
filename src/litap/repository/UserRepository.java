@@ -1,4 +1,4 @@
-package elvaan.litap.repository;
+package litap.repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,8 +12,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import elvaan.litap.database.DatabaseConnection;
-import elvaan.litap.model.User;
+import litap.database.DatabaseConnection;
+import litap.model.User;
 
 /*
  * Schnittstelle für die Datenbankzugriffe für Benutzer (User)
