@@ -1,0 +1,68 @@
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
+  id SERIAL NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password VARCHAR(255),
+  role VARCHAR(20) NOT NULL,
+  birthdate DATE,
+  land VARCHAR(255),
+  profession VARCHAR(255),
+  newsletter BOOLEAN NOT NULL,
+  status VARCHAR(20),
+  CONSTRAINT users_id_pkey PRIMARY KEY (id)
+) WITHOUT OIDS;
+
+
+INSERT INTO users (email, password, role, birthdate, land, profession, newsletter, status) VALUES('admin@litap.local','12345','admin', '01.01.2000', 'Cyberspace', 'Administrator', false, 'active');
+INSERT INTO users (email, password, role, birthdate, land, profession, newsletter, status) VALUES('user@litap.local','12345','user', '01.01.2000', 'Cyberspace', 'User', true, 'active');
+
+
+DROP TABLE IF EXISTS literature;
+
+CREATE TABLE literature (
+  id SERIAL NOT NULL,
+  author VARCHAR(255) NOT NULL,
+  title VARCHAR(255) NOT NULL,
+  content TEXT NOT NULL,
+  motivation TEXT NOT NULL,
+  user_id SERIAL REFERENCES users (id),
+  source VARCHAR(255),
+  postdate TIMESTAMP NOT NULL,
+  formating VARCHAR(60) NOT NULL,
+  topic VARCHAR(255),
+  application VARCHAR(255),
+  genre VARCHAR(255),
+  admincomment TEXT,
+  status VARCHAR(20),
+  keep BOOLEAN DEFAULT FALSE,
+  CONSTRAINT literature_id_pkey PRIMARY KEY (id)
+) WITHOUT OIDS;
+
+INSERT INTO literature (author, title, content, motivation, user_id, source, postdate, formating, topic, application, genre, admincomment, status) VALUES('Admin', 'Lorem ipsum dolor', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.', 1, 'http://www.loremipsum.de/', CURRENT_TIMESTAMP, 'left', 'Beispieltext', 'Test', 'Beispieltexte', NULL, 'publish');
+INSERT INTO literature (author, title, content, motivation, user_id, source, postdate, formating, topic, application, genre, admincomment, status) VALUES('Admin', 'Lorem ipsum dolor (old)', 'Lorem ipsum dolor (old) sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.', 1, 'http://www.loremipsum.de/', '2011-11-11 11:11:11', 'left', 'Beispieltext', 'Test', 'Beispieltexte', NULL, 'publish');
+
+DROP TABLE IF EXISTS complain;
+CREATE TABLE complain (
+  id SERIAL NOT NULL,
+  literature_id SERIAL NOT NULL REFERENCES literature (id),
+  user_id SERIAL REFERENCES users (id),
+  complain TEXT NOT NULL,
+  complaindate TIMESTAMP NOT NULL,
+  status VARCHAR(20),
+  reason VARCHAR(100),
+  source VARCHAR(511),
+  CONSTRAINT complain_id_pkey PRIMARY KEY (id)
+) WITHOUT OIDS;
+
+DROP TABLE IF EXISTS comments;
+CREATE TABLE comments (
+	id SERIAL NOT NULL,
+	literature_id SERIAL NOT NULL REFERENCES literature (id),
+	user_id SERIAL REFERENCES users (id),
+	comment TEXT NOT NULL,
+	postdate TIMESTAMP NOT NULL,
+	CONSTRAINT comments_id_pkey PRIMARY KEY (id)
+) WITHOUT OIDS;
+
+
