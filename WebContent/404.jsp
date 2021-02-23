@@ -13,7 +13,7 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<h4>Die Seite wurde nicht gefunden.</h4>
-				<p>Fehler 404</p>
+				<p>Fehler404</p>
 			</div>
 		</div>
 	</div>
